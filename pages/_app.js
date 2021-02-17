@@ -1,8 +1,11 @@
-import Head from 'next/head';
-import { ThemeProvider } from 'styled-components'
+/* eslint-disable react/jsx-props-no-spreading */
+import React from 'react';
+import Head from 'next/head'; // Api do proprio next qye traz um Header, mesmo estando trabalhando somente com js
+import { ThemeProvider } from 'styled-components';
 import theme from '../src/theme';
 import GlobalStyle from '../src/theme/GlobalStyle';
 
+// eslint-disable-next-line react/prop-types
 export default function App({ Component, pageProps }) {
   return (
     <>
@@ -18,5 +21,5 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  )
+  );
 }

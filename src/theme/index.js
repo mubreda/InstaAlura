@@ -1,4 +1,6 @@
-import { typographyVariants } from './typographyVariants';
+/* eslint-disable linebreak-style */
+
+import typographyVariants from './typographyVariants';
 
 export const colors = {
   background: {

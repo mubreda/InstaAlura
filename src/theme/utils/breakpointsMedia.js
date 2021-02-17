@@ -1,7 +1,9 @@
+/* eslint-disable linebreak-style */
+
 import { css } from 'styled-components';
 import { breakpoints } from '../index';
 
-export function breakpointsMedia(cssByBreakpoint) {
+function breakpointsMedia(cssByBreakpoint) {
   const breakpointNames = Object.keys(breakpoints);
   return breakpointNames
     .filter((breakpointName) => Boolean(cssByBreakpoint[breakpointName]))
@@ -11,3 +13,5 @@ export function breakpointsMedia(cssByBreakpoint) {
     }
   `);
 }
+
+export default breakpointsMedia;
