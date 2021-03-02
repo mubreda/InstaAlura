@@ -46,7 +46,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ## Aplicação ([React](https://reactjs.org/) + [Next.js](https://nextjs.org/) + [JavaScript](https://www.javascript.com/))
 - [Styled Components](https://styled-components.com/)
 - [Framer Motion](https://www.framer.com/motion/)
-- -[ESLint](https://eslint.org/)
+- [ESLint](https://eslint.org/)
 
 ## Utilitários
 
