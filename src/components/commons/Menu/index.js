@@ -4,7 +4,7 @@ import React from 'react';
 import Button from '../Button';
 import MenuWrapper from './styles/MenuWrapper';
 import Logo from '../../../theme/Logo';
-import { Text } from '../../foundation/Text';
+import Text from '../../foundation/Text';
 
 export default function Menu() {
   return (

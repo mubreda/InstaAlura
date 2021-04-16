@@ -12,6 +12,7 @@ const ButtonGhost = css`
 `;
 
 const ButtonDefault = css`
+  color: white;
   color: ${({ theme, variant }) => get(theme, `colors.${variant}.contrastText`)};
   background-color: ${({ theme, variant }) => get(theme, `colors.${variant}.color`)};
 `;
@@ -34,6 +35,14 @@ const Button = styled.button`
       ${TextStyleVariants.paragraph1}
     `,
   })}
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: .2;
+  }
+  ${({ fullWidth }) => fullWidth && css`
+    width: 100%;
+  `};
 
   ${propToStyle('margin')}
   ${propToStyle('display')}

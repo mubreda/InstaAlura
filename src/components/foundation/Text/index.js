@@ -51,7 +51,7 @@ const TextBase = styled.span`
   ${propToStyle('textAlign')}
 `;
 
-export function Text({
+export default function Text({
   variant,
   children,
   tag,
@@ -72,10 +72,11 @@ export function Text({
 Text.defaultProps = {
   tag: 'span',
   variant: 'paragraph1',
+  children: null,
 };
 
 Text.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'p', 'li', 'a', 'span']),
   variant: PropTypes.oneOf(['title', 'paragraph1', 'smallestException']),
 };
